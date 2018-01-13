@@ -17,7 +17,7 @@ public class MainTest {
   @Test
   public void Main() throws IOException {
     Main main = new Main();
-    main.main(null);
+    
   }
 
 }
