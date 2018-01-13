@@ -36,13 +36,6 @@ public class Shop{
     this.phone = phone;
   }
 
-  /**
-  * Returns value of point
-  * @return
-  */
-  public int getPoint() {
-    return point;
-  }
 
   /**
   * Sets new value of point
@@ -59,80 +52,6 @@ public class Shop{
   public String getName() {
     return name;
   }
-
-  /**
-  * Sets new value of name
-  * @param
-  */
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  /**
-  * Returns value of typeString
-  * @return
-  */
-  public String getTypeString() {
-    return typeString;
-  }
-
-  /**
-  * Sets new value of typeString
-  * @param
-  */
-  public void setTypeString(String typeString) {
-    this.typeString = typeString;
-  }
-
-  /**
-  * Returns value of type
-  * @return
-  */
-  public int getType() {
-    return type;
-  }
-
-  /**
-  * Sets new value of type
-  * @param
-  */
-  public void setType(int type) {
-    this.type = type;
-  }
-
-  /**
-  * Returns value of location
-  * @return
-  */
-  public String getLocation() {
-    return location;
-  }
-
-  /**
-  * Sets new value of location
-  * @param
-  */
-  public void setLocation(String location) {
-    this.location = location;
-  }
-
-  /**
-  * Returns value of phone
-  * @return
-  */
-  public int getPhone() {
-    return phone;
-  }
-
-  /**
-  * Sets new value of phone
-  * @param
-  */
-  public void setPhone(int phone) {
-    this.phone = phone;
-  }
-
-
 
   /**
   * Create string representation of Shop for printing
