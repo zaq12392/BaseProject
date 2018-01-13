@@ -141,24 +141,24 @@ public class Shop{
   public String toString() {
         
         if(this.point >= 0){
-            String record = "�n";
+            String record = "好";
             if(point == 3) {
-              record = "�n";
+              record = "好";
             }else if(point == 2) {
-              record = "��";
+              record = "中";
             }else {
-              record = "�t";
+              record = "差";
             }
-            return "�Ӯa�W�r�G" + name + "\n" +
-                   "�Ӯa���O�G" + typeString + "\n" +
-                   "�Ӯa��m�G" + location + "\n" +
-                   "�Ӯa�q�ܡG04-" + phone + "\n" +
-                   "�Ӯa�����G" + record + "\n\n";
+            return "商家名字：" + name + "\n" +
+                   "商家類別：" + typeString + "\n" +
+                   "商家位置：" + location + "\n" +
+                   "商家電話：04-" + phone + "\n" +
+                   "商家評分：" + record + "\n\n";
         }else{
-            return "�Ӯa�W�r�G" + name + "\n"+
-                   "�Ӯa���O�G " + typeString + "\n" +
-                   "�Ӯa��m�G" + location + "\n" +
-                   "�Ӯa�q�ܡG04-" + phone + "\n\n";
+            return "商家名字：" + name + "\n"+
+                   "商家類別： " + typeString + "\n" +
+                   "商家位置：" + location + "\n" +
+                   "商家電話：04-" + phone + "\n\n";
                    
         }
   }
@@ -168,26 +168,26 @@ public class Shop{
 
 
 
-    // 0 �G ��
-    // 1 �G �x
-    // 2 �G ��
-    // 3 �G ��
-    // 4 �G �q
+    // 0 ： 馬
+    // 1 ： 台
+    // 2 ： 日
+    // 3 ： 美
+    // 4 ： 義
 
     public static Shop[] getShops(){
 
         Shop[] Data = new Shop[10];
 
-        Data[0] = new Shop(-1, "�n��", "�F�n�ȵ�", 0, "�{�Ҹ�20��28��9��",24521828);
-        Data[1] = new Shop(-1, "�˫�����Ʋz", "�F�n�ȵ�", 0, "�x�W�j�D�T�q301��", 22521733);
-        Data[2] = new Shop(-1, "�ӯ������]", "�x��" , 1, "�֤W��214��", 24524563);
-        Data[3] = new Shop(-1, "�ۭG�M�a", "�x��", 1, "��ظ�127��22��", 24519878);
-        Data[4] = new Shop(-1, "�T������", "�馡�Ʋz", 2, "�e�n���G�q255��1��", 24517808);
-        Data[5] = new Shop(-1, "���N���d����", "�馡�Ʋz", 2, "��ظ�100��", 24528618);
-        Data[6] = new Shop(-1, "�����n", "�����Ʋz", 3, "�{�j��113��", 24523123);
-        Data[7] = new Shop(-1, "�����", "�����Ʋz", 3, "�֬P��427��", 24513592);
-        Data[8] = new Shop(-1, "OHLALA", "�q�j�Q�Ʋz", 4, "��ظ�179��", 27081200);
-        Data[9] = new Shop(-1, "�H�q�N", "�q�j�Q�Ʋz", 4, "��w��183��", 24523023);
+        Data[0] = new Shop(-1, "南香", "東南亞菜", 0, "逢甲路20巷28弄9號",24521828);
+        Data[1] = new Shop(-1, "瓦城泰國料理", "東南亞菜", 0, "台灣大道三段301號", 22521733);
+        Data[2] = new Shop(-1, "太祖飲食館", "台菜" , 1, "福上巷214弄", 24524563);
+        Data[3] = new Shop(-1, "擄胃專家", "台菜", 1, "文華路127巷22號", 24519878);
+        Data[4] = new Shop(-1, "三次魚屋", "日式料理", 2, "河南路二段255之1號", 24517808);
+        Data[5] = new Shop(-1, "滿燒肉丼食堂", "日式料理", 2, "文華路100號", 24528618);
+        Data[6] = new Shop(-1, "麥味登", "美式料理", 3, "逢大路113號", 24523123);
+        Data[7] = new Shop(-1, "麥當勞", "美式料理", 3, "福星路427號", 24513592);
+        Data[8] = new Shop(-1, "OHLALA", "義大利料理", 4, "文華路179號", 27081200);
+        Data[9] = new Shop(-1, "隨義煮", "義大利料理", 4, "西安街183號", 24523023);
 
         return Data;
     }
