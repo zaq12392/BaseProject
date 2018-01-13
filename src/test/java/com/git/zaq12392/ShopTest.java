@@ -56,4 +56,8 @@ public class ShopTest {
         "商家電話：04-" + "24521828" + "\n" +
         "商家評分：" + "好" + "\n\n",shop.toString());
   }
+  @Test
+  public void getShop(){
+    Shop[] data = Shop.getShops();
+  }
 }
