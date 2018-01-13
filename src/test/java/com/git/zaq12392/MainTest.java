@@ -15,7 +15,7 @@ public class MainTest {
   @Test
   public void Main() {
     Main main = new Main();
-    
+    int input = 1;
   }
 
 }
