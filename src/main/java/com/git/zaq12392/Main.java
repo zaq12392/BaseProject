@@ -41,6 +41,10 @@ public class Main {
           chooseFood = ran.nextInt(2) + 8;// 8-9
           break;
         }
+        System.out.println("按下抽選扭? 1.按 2.不按");
+        if(scanner.nextInt()==2){
+          continue;
+        }
         System.out.println("\n抽選結果:"+ data[chooseFood].getName() + "\n");
         System.out.println("要詳細資料嗎?");
         System.out.println("1.要 2.不要");
