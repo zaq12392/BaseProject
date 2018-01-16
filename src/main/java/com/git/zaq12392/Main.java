@@ -8,13 +8,13 @@ public class Main {
 
   public static void main(String[] args) {
 
-    scanner = new Scanner(System.in);
-
+    //scanner = new Scanner(System.in);
+    Input ask = new Input();
     Shop[] data = Shop.getShops();
     while (true) {
       System.out.println("想吃甚麼?");
       System.out.println("1.東南亞菜 2.台菜 3.日式料理 4.美式料理 5.義大利料理");
-      int input = scanner.nextInt();
+      int input = ask.ask();
       int chooseFood = 0;
       while(true) {
         System.out.println("轉盤:\n");
@@ -42,18 +42,21 @@ public class Main {
           break;
         }
         System.out.println("按下抽選扭? 1.按 2.不按");
-        if(scanner.nextInt()==2){
+        input = ask.ask();
+        if(input == 2){
           continue;
         }
         System.out.println("\n抽選結果:"+ data[chooseFood].getName() + "\n");
         System.out.println("要詳細資料嗎?");
         System.out.println("1.要 2.不要");
-        if(scanner.nextInt() == 1) {
+        input = ask.ask();
+        if(input == 1) {
           System.out.print(data[chooseFood]);
         }
         System.out.println("這間可以嗎?");
         System.out.println("1.滿意 2.重新選擇");
-        if(scanner.nextInt() == 1) {
+        input = ask.ask();
+        if(input == 1) {
           break;
         } else {
           input += ran.nextInt(3);
@@ -64,10 +67,11 @@ public class Main {
       }
       
       System.out.println("1.評分 2.不評分");
-      input = scanner.nextInt();
+      input = ask.ask();
       if (input == 1) {
         System.out.println("請輸入 1.差 2.中 3.好");
-        data[chooseFood].setPoint(scanner.nextInt());
+        input = ask.ask();
+        data[chooseFood].setPoint(input);
         System.out.println("評分成功!\n\n");
       }
 
