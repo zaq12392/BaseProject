@@ -11,10 +11,11 @@ public class Main {
     //scanner = new Scanner(System.in);
     Input ask = new Input();
     Shop[] data = Shop.getShops();
+    int input;
     while (true) {
       System.out.println("想吃甚麼?");
       System.out.println("1.東南亞菜 2.台菜 3.日式料理 4.美式料理 5.義大利料理");
-      int input = ask.ask();
+      input = ask.ask();
       int chooseFood = 0;
       while(true) {
         System.out.println("轉盤:\n");
@@ -74,7 +75,13 @@ public class Main {
         data[chooseFood].setPoint(input);
         System.out.println("評分成功!\n\n");
       }
-
+      System.out.println("是否繼續使用本系統 1.是 2.否");
+      input = ask.ask();
+      if(input == 1){
+        continue;
+      } else {
+        break;
+      }
     }
   }
 }
