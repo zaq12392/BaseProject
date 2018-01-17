@@ -15,13 +15,6 @@ public class MainTest {
 
   @Test
   public void Main() throws IOException {
-    Input ask = new Input();
     Main main = new Main();
-    main.main(null);
-    /*Assert.assertEquals(1,ask.ask());
-    Assert.assertEquals(1,ask.ask());
-    Assert.assertEquals(1,ask.ask());
-    Assert.assertEquals(1,ask.ask());
-    Assert.assertEquals(1,ask.ask());*/
   }
 }
